@@ -1,0 +1,8 @@
+Real-life analogy:
+
+- Class = House blueprint
+- Object = Actual house built using that blueprint
+- Properties = House color, number of rooms, address
+- Methods = Open door, close door, turn on lights
+
+A class itself is not an individual student. It defines the structure and behavior of the students we create.
