@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Card</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <button style="width: 100px; padding: 20px; background-color: aquamarine; font-size: 2vw; border-radius: 10px;">
-        Click_Me
-    </button>
-    <h1></h1>
-    
-    <script>
-        let data = {
-            name:"uzair_ansari",
-            fnc: function(){
-                return this.name
-            }
-        }
+  <h2>Add Student</h2>
+  <form id="form">
+    <input type="text" id="name" placeholder="Enter Student Name">
+    <input type="number" id="num" placeholder="Enter Student Age">
+    <button type="submit">Add Student</button>
+  </form>
 
-    let change = "";
+  <div id="all_students_container">
+     
+  </div>
 
-    document.getElementsByTagName("button")[0].addEventListener("click", () => {
-    if (!change) {
-        document.getElementsByTagName("h1")[0].innerHTML =
-            "Hello My Name " + data.fnc();
-        change = "yes";
-    } else if (change) {
-        document.getElementsByTagName("h1")[0].innerHTML = "";
-        change = "";
-    }
-    });
-
-      
-    </script>
+<script src="js.js"></script>
+<script src="Opps.js"></script>
 </body>
 </html>
